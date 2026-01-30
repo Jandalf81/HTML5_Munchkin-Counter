@@ -37,12 +37,12 @@ body {
 
 .column {
     display: grid;
-    grid-template-columns: 33% auto 33%;
+    grid-template-columns: 40% auto 40%;
 }
 
 div.key {
     text-align: right; 
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;

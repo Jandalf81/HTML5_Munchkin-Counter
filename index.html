@@ -1,1 +1,67 @@
-<html>    <head>        <title>Munchkin Level Counter</title>        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <meta charset="UTF-8">        <link rel="stylesheet" href="style.css">        <script type="text/javascript" src="munchkin.js" defer></script>    </head>    <body>        <div class="main inverted">            <h2>Munchkin</h2>            <div class="container">                <div class="key bgblue">Stufe</div>                <div class="value bgblue"id="level-invert">1</div>                <div class="bgblue"></div>                <div>+</div>                <div></div>                <div></div>                <div class="key bggreen">Bonus</div>                <div class="value bggreen" id="bonus-invert">0</div>                <div class="bggreen"></div>                                <div>=</div>                <div></div>                <div></div>                <div class="key bgred">Stärke</div>                <div class="value bgred" id="strength-invert">1</div>                <div class="bgred"></div>            </div>        </div>        <div class="main">            <h2>Munchkin</h2>            <div class="container">                <div class="key bgblue">Stufe</div>                <div class="value bgblue"id="level">1</div>                <div class="bgblue">                    <button onclick="decrement('level')">➖</button>                    <button onclick="increment('level')">➕</button>                </div>                <div>+</div>                <div></div>                <div></div>                <div class="key bggreen">Bonus</div>                <div class="value bggreen" id="bonus">0</div>                <div class="bggreen">                    <button onclick="decrement('bonus')">➖</button>                    <button onclick="increment('bonus')">➕</button>                </div>                                <div>=</div>                <div></div>                <div></div>                <div class="key bgred">Stärke</div>                <div class="value bgred" id="strength">1</div>                <div class="bgred"></div>            </div>        </div>    </body></html>
+<html>
+    <head>
+        <title>Munchkin Level Counter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="munchkin.js" defer></script>
+    </head>
+    <body>
+        <div class="main inverted">
+            <h2>Munchkin</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="key bgblue">Stufe</div>
+                    <div class="value bgblue"id="level-invert">1</div>
+                    <div class="buttons bgblue"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="key bggreen">+ Bonus</div>
+                    <div class="value bggreen" id="bonus-invert">0</div>
+                    <div class="buttons bggreen"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="key bgred">= Stärke</div>
+                    <div class="value bgred" id="strength-invert">1</div>
+                    <div class="buttons bgred"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Munchkin</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="key bgblue">Stufe</div>
+                    <div class="value bgblue"id="level">1</div>
+                    <div class="buttons bgblue">
+                        <img class="button" src="./images/Arrow-down.png" onclick="decrement('level')" />
+                        <img class="button" src="./images/Arrow-up.png" onclick="increment('level')" />
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="column">
+                    <div class="key bggreen">+ Bonus</div>
+                    <div class="value bggreen" id="bonus">0</div>
+                    <div class="buttons bggreen">
+                        <img class="button" src="./images/Arrow-down.png" onclick="decrement('bonus')" />
+                        <img class="button" src="./images/Arrow-up.png" onclick="increment('bonus')" />
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="column">
+                    <div class="key bgred">= Stärke</div>
+                    <div class="value bgred" id="strength">1</div>
+                    <div class="buttons bgred"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
